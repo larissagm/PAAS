@@ -1,0 +1,13 @@
+n_turmas n_salas
+cap_sala[0] ... cap_sala[n_salas - 1]
+
+dem_turma[0] n_aulas[0]
+horarios[0][0] ... horarios[0][n_aulas[0] - 1]
+
+...
+
+dem_turma[n] n_aulas[n]
+horarios[n][0] ... horarios[n][n_aulas[n] - 1]
+
+// Cada horário é representado por um inteiro, sendo 1 o primeiro horário da
+// segunda-feira, 10 o último, 11 o primeiro horário da terça e assim por diante.
