@@ -1,0 +1,47 @@
+Valor objetivo: 0
+
+Turma 0
+Aula 0 na sala 1
+Aula 1 na sala 1
+Aula 2 na sala 1
+Aula 3 na sala 1
+Aula 4 na sala 1
+
+Turma 1
+Aula 0 na sala 0
+Aula 1 na sala 0
+Aula 2 na sala 0
+Aula 3 na sala 0
+Aula 4 na sala 0
+
+Turma 2
+Aula 0 na sala 2
+Aula 1 na sala 2
+Aula 2 na sala 2
+Aula 3 na sala 2
+Aula 4 na sala 2
+Aula 5 na sala 2
+
+Turma 3
+Aula 0 na sala 2
+Aula 1 na sala 2
+Aula 2 na sala 2
+Aula 3 na sala 2
+
+Turma 4
+Aula 0 na sala 1
+Aula 1 na sala 1
+Aula 2 na sala 1
+Aula 3 na sala 1
+Aula 4 na sala 1
+Aula 5 na sala 1
+Aula 6 na sala 1
+Aula 7 na sala 1
+
+Turma 5
+Aula 0 na sala 0
+Aula 1 na sala 0
+Aula 2 na sala 0
+Aula 3 na sala 0
+Aula 4 na sala 0
+
