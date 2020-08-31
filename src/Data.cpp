@@ -1,7 +1,3 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
 #include "Data.hpp"
 
 Data::Data(std::string file){
@@ -72,23 +68,18 @@ int Data::getNSalas(){
     return n_salas;
 }
 
-int Data::getNAulas(int x){
-    return n_aulas[x];
+std::vector<int> Data::getNAulas(){
+    return n_aulas;
 }
 
-int Data::getCapSala(int x){
-    return cap_sala[x];
+std::vector<int> Data::getCapSala(){
+    return cap_sala;
 }
 
-int Data::getDemTurma(int x){
-    return dem_turma[x];
+std::vector<int> Data::getDemTurma(){
+    return dem_turma;
 }
 
-int Data::getNChoque(int x){
-    return choque[x].size();
-}
-
-int Data::getChoque(int x, int y, int z){
-    if (z==1) return choque[x][y].first;
-    else return choque[x][y].second;
+std::vector<std::vector<std::pair<int,int>>> Data::getChoque(){
+    return choque;
 }
