@@ -5,14 +5,15 @@ using namespace std;
 namespace operations_research{
 Modelo::Modelo(Data data){
 
-    file = data.getNomeArq().substr(8,file.size()-13);
+    status = "Not solved";
     n_turmas = data.getNTurmas();
     n_salas = data.getNSalas();
     cap_sala = data.getCapSala();
     dem_turma = data.getDemTurma();
     n_aulas = data.getNAulas();
     choque = data.getChoque();
-    status = "Not solved";
+    file = data.getNomeArq();
+    file = file.substr(8,file.size()-13);
 
 }
 
