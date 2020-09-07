@@ -7,15 +7,15 @@
 
 class Data {
 
-    private:
+    public:
+
+        Data(std::string file);
         std::string nome_arq;
         int n_turmas, n_salas;
         std::vector<int> cap_sala, dem_turma, n_aulas;
         std::vector<std::vector<int>> horarios;
         std::vector<std::vector<std::pair<int,int>>> choque;
 
-    public:
-        Data(std::string file);
         int getNTurmas();
         int getNSalas();
         std::string getNomeArq();

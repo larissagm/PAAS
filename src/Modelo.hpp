@@ -8,14 +8,14 @@ namespace operations_research{
 class Modelo{
 
     private:
-        std::string file, status;
-        int n_turmas, n_salas, objetivo;
-        std::vector<int> cap_sala, dem_turma, n_aulas;
-        std::vector<std::vector<std::pair<int,int>>> choque;
-        std::vector<std::vector<int>> solucao;
+        std::string status, file;
+        MPSolver *solver;
+        std::vector<std::vector<std::vector<MPVariable*>>> x;
+        std::vector<MPVariable*> y;
+        MPObjective* obj;
 
     public:
-        Modelo(Data data);
+        Modelo(const Data &data);
         void solve();
         void printSolution();
 };
