@@ -1,13 +1,13 @@
-n_turmas n_salas
-cap_sala[0] ... cap_sala[n_salas - 1]
+n_turmas  n_salas
+cap_sala[0] ... cap_sala[n]
 
-dem_turma[0] n_aulas[0]
-horarios[0][0] ... horarios[0][n_aulas[0] - 1]
+dem_turma[0]
+string horario
 
 ...
 
-dem_turma[n] n_aulas[n]
-horarios[n][0] ... horarios[n][n_aulas[n] - 1]
+dem_turma[n]
+string horario
 
-// Cada horário é representado por um inteiro, sendo 1 o primeiro horário da
-// segunda-feira, 10 o último, 11 o primeiro horário da terça e assim por diante.
+// Os horários de cada turma são representados por uma string, conforme o formato no SIGAA,
+// utilizando o hífen caso seja necessário adicionar mais horários (exemplo: 24M23-5M1)
