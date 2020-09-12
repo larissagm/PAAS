@@ -19,15 +19,43 @@ Data::Data(std::string file){
 
     for (int i=0; i<n_turmas; i++){
 
-        arq >> dem_turma[i] >> n_aulas[i];
-        total_aulas+= n_aulas[i];
+        arq >> dem_turma[i];
 
         //Horários da turma i
-        horarios[i]=std::vector<int>(n_aulas[i]);
+        std::string horario;
+        arq >> horario;
 
-        for (int j=0;j<n_aulas[i];j++){
-            arq >> horarios[i][j];
-        }
+        //Conversão do horário (string) para inteiros,
+        //armazenados em horarios[i] para cada turma i
+        for(int j=0, f=0; j<horario.size(); j++){
+			if (isalpha(horario[j])){		
+				int c=0;
+				for (int k=f; k<j; k++){
+					for (int l=j+1; l<horario.size(); l++){
+                        //Fim da leitura atual
+						if (horario[l]=='-') {
+							c=l;
+							break;
+						}
+                        
+						//Cálculo do horário
+						int x = 15*horario[k]+horario[l]-798;
+						if (horario[j]=='T') x+=5;
+						else if (horario[j]=='N') x+=11;
+
+						horarios[i].push_back(x);
+					}
+				}
+                //Continua a leitura do próximo horário
+				if (c!=0) {
+					f=c+1;
+					j=c;
+				}
+				else break;
+			}
+		}
+        n_aulas[i] = horarios[i].size();
+        total_aulas+=n_aulas[i];
     }
 
     //Choques de horário
@@ -52,7 +80,6 @@ Data::Data(std::string file){
             }
         }
     }
-
     arq.close();
 }
 
