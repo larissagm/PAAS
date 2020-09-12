@@ -41,9 +41,9 @@ Aula 6 na sala 1
 Aula 7 na sala 1
 
 Turma 5
-Aula 0 na sala 0
-Aula 1 na sala 0
-Aula 2 na sala 0
-Aula 3 na sala 0
-Aula 4 na sala 0
+Aula 0 na sala 2
+Aula 1 na sala 2
+Aula 2 na sala 2
+Aula 3 na sala 2
+Aula 4 na sala 2
 
