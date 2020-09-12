@@ -37,7 +37,7 @@ Data::Data(std::string file){
 							c=l;
 							break;
 						}
-                        
+
 						//Cálculo do horário
 						int x = 15*horario[k]+horario[l]-798;
 						if (horario[j]=='T') x+=5;
